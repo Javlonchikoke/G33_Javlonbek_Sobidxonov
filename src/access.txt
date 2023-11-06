@@ -1,0 +1,26 @@
+[192.168.0.100] - [john_doe] [2023-11-06 14:30:45] "PUT /api/users 200"
+[10.0.0.5] - [jane_smith] [2023-11-06 15:45:21] "POST /api/data 404"
+[172.16.0.2] - [admin_user] [2023-11-06 16:20:10] "GET /dashboard 301"
+[192.168.1.10] - [user123] [2023-11-06 17:55:30] "GET /images/logo.png 200"
+
+
+   Sizga veb server jurnali faylini o'qiydigan,
+       jurnal yozuvlarini tahlil qiladigan va veb trafik bo'yicha  statistik ma'lumotlar va hisobotlarni
+      yaratadigan Java dasturini yaratish topshirilgan . Sizga access.txt nomli veb server
+     jurnali fayli beriladi . Jurnal faylidagi har bir qatorda quyidagi formatdagi yozuv mavjud :
+            [192.168.0.100] - [john_doe] [2023-11-06 14:30:45] "PUT /api/users 200"
+              [10.0.0.5] - [jane_smith] [2023-11-06 15:45:21] "POST /api/data 404"
+             [172.16.0.2] - [admin_user] [2023-11-06 16:20:10] "GET /dashboard 301"
+              [192.168.1.10] - [user123] [2023-11-06 17:55:30] "GET /images/logo.png 200"
+ Java I/O Streams yordamida access.txt faylini o'qiydigan, har bir jurnal yozuvini tahlil qiladigan
+ va undan tegishli ma'lumotlarni ajratib oladigan Java dasturini
+ yarating. Har bir satrdagi ma'lumot berilgan formatga mos tushshini
+ regex yordamida tekshiring. Sizning dasturingiz quyidagi statistikani
+yaratish uchun jurnal yozuvlarini tahlil qilishi kerak :
+    So'rovlarning umumiy soni .
+    IP-manzil uchun so'rovlar soni .
+    HTTP status kodi 404 bo'lgan so'rovlarni sanash.
+
+   Yuqoridagi statistik malumotlarni yozish uchun Java Logging API-dan foydalaning .
+
+
